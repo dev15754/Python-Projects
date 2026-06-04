@@ -269,38 +269,108 @@
 #____________
 #Q22
 # Ask user 5 names, reverse the collection and print
+# names=[]
+# for a in range(5):
+#     ask_names=(input(f"tell name {a+1}"))
+#     names.append(ask_names)
+# names.reverse()
+# print (names)
 
-#____________
-#Q23
-# Ask user 5 colors, sort them and then reverse them
 
-#____________
-#Q24
-# Ask user 5 subjects, print the subject stored at index 3
+# #____________
+# #Q23
+# # Ask user 5 colors, sort them and then reverse them
+# colours=[]
+# for a in range(5):
+#     ask_colour=(input(f"tell colour {a+1}"))
+#     colours.append(ask_colour)
+# colours.sort()
+# colours.reverse()
+# print(colours)
 
-#____________
-#Q25
-# Ask user 5 marks, print marks from index 1 to index 4
+# #____________
+# #Q24
+# # Ask user 5 subjects, print the subject stored at index 3
+# subject=[]
+# for a in range(5):
+#     ask_subject=(input(f"tell sub {a+1}"))
+#     subject.append(ask_subject)
+# print(subject[3])
 
-#____________
-#Q26
-# Ask user 5 marks, print all marks except the first one
+# #____________
+# #Q25
+# # Ask user 5 marks, print marks from index 1 to index 4
+# marks=[]
+# for a in range (5):
+#     ask_marks=int(input(f"marks of sub {a+1}"))
+#     marks.append(ask_marks)
+# print(marks[1:5])
 
-#____________
-#Q27
-# Ask user 5 numbers, check whether the first and last numbers are equal
+# #____________
+# #Q26
+# # Ask user 5 marks, print all marks except the first one
+# marks=[]
+# for a in range(5):
+#     ask_marks=int(input(f"marks of sub{a+1}"))
+#     marks.append(ask_marks)
+# marks.pop(0)
+# print(marks)
 
-#____________
-#Q28
-# Ask user 5 movie names, check whether the first movie and last movie are the same
+# #____________
+# #Q27
+# # Ask user 5 numbers, check whether the first and last numbers are equal
+# numbers=[]
+# for a in range(5):
+#     ask_number=int(input(f"tell num {a+1}: "))
+#     numbers.append(ask_number)
+# if(numbers[0]==numbers[4]):
+#     print(numbers,"first and last are equal")
+# else:
+#     print("not equal")
 
-#____________
-#Q29
-# Ask user 5 numbers, create a copy, reverse the copy and print both collections
+
+# #____________
+# #Q28
+# # Ask user 5 movie names, check whether the first movie and last movie are the same
+# movies=[]
+# for a in range(5):
+#     ask_movie=(input(f"tell movie {a+1}"))
+#     movies.append(ask_movie)
+# if(movies[0]==movies[4]):
+#     print("same",movies)
+# else:
+#     print("not same")
+
+# #___________
+# #Q29
+# # Ask user 5 numbers, create a copy, reverse the copy and print both collections
+# numbers=[]
+# for a in range(5):
+#     ask_number=int(input(f"tell num {a+1}"))
+#     numbers.append(ask_number)
+# copy=(numbers.copy())
+# (numbers.reverse())
+# print(copy)
+# print(numbers)
+
 
 #____________
 #Q30
 # Ask user 5 numbers, create a copy, reverse it and check if it is a palindrome
+# numbers=[]
+# for a in range(5):
+#     ask_numbers=int(input(f"tell no {a+1}"))
+#     numbers.append(ask_numbers)
+# copy=(numbers.copy()) 
+# print(copy)
+# numbers.reverse()
+# print(numbers)
+
+# if(copy == numbers):
+#     print("its Palindrome")
+# else:
+#     print("not a Palindrome")
+
 
 #____________
 #Q31

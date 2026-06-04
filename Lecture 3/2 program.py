@@ -21,8 +21,8 @@
 #name count and count the elements
 
 
-# tup=(1,2,3,4,5,2)
-# print(tup.index(3))
+tup=(1,2,3,4,5,2)
+print(tup.index(3))
 
 #===========================================================ex 1
 # ask1=(input("enter movie name 1"))
