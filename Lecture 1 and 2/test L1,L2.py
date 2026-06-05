@@ -100,8 +100,8 @@
 # Ask user marks, if marks>=0 and marks<=100 print "Valid Marks" else print "Invalid Marks"
 # Ask user email and pin, if email=="test@gmail.com" check if pin=="0000" print "Access Granted" else "Wrong Pin", else print "Email Not Found"
 # Ask user city and code, if city=="Jammu" check if code=="180001" print "Correct Location" else "Wrong Code", else print "City Not Found"
-#  =====================================================================================================
 
+#  =====================================================================================================
 #Q1
 # input users first name ,capitalize it &  print its length  also see is it end with singh
 name=input("enter your first name")

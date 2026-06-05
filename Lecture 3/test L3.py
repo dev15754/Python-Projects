@@ -49,7 +49,6 @@
 # Store a tuple of marks and print the first and last marks
 # Store mixed data (name, age, city) and print only the age
 
-
 # ____________
 # Q1
 # Ask user 5 favorite movies, display only the first 3 movies
