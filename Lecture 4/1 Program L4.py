@@ -1,4 +1,5 @@
-                                                          #dictionary
+                                                          #dictionary 
+                            #type={} this is empty dictionary
                    # #they store data  values in key:value pairs
 # to store in dictionary we should write total data in {}
 #key cannot change value can change
