@@ -675,11 +675,11 @@
 #-----------------
 # Q63
 # Create d = {"name":"abhy"}. Check if "city" is NOT in d. Print True or False.
-d = {"name":"abhy"}
-if "city" in d:
-    print("true")
-else:
-    print("false")
+# d = {"name":"abhy"}
+# if "city" in d:
+#     print("true")
+# else:
+#     print("false")
 
 
 #-----------------
@@ -707,28 +707,33 @@ else:
 #-----------------
 # Q66
 # d = {"name":"abhy","age":20,"city":"bara"} — delete "city" using .pop(). Print returned value and dict.
-
-
+# d = {"name":"abhy","age":20,"city":"bara"}
+# print(d.pop("city"))
+# print(d)
 
 
 #-----------------
 # Q67
 # Create set s = {1,2,3,4,5}. Find difference of s from {3,4,5,6,7}. Print result.
-
-
+# s = {1,2,3,4,5}
+# d={3,4,5,6,7}
+# print(s.intersection(d))
 
 
 #-----------------
 # Q68
 # student = {"name":"abhy","cgpa":9.6}. Print length of the dict using len().
-
-
+# student = {"name":"abhy","cgpa":9.6}
+# print(len(student))
 
 
 #-----------------
 # Q69
 # Create d = {"a":1,"b":2}. Copy it to d2 using .copy(). Change d2["a"] to 99. Print both d and d2.
-
+# d={"a":1,"b":2}
+# d2=d.copy()
+# d2["a"]=99
+# print(d2)
 
 
 
@@ -736,78 +741,109 @@ else:
 # Q70
 # Create set s = {1,2,3}. Check if s is subset of {1,2,3,4,5}. Print True or False.
 
-
-
+# s = {1,2,3}
+# s2={1,2,3,4,5}
+# if s.issubset(s2):
+#     print("true")
+# else:
+#     print("false")
 
 #-----------------
 # Q71
 # Create s = {1,2,3,4,5}. Check if s is superset of {1,2,3}. Print True or False.
-
-
+# s={1,2,3,4,5}
+# s2={1,2,3}
+# if s.issuperset(s2):
+#     print("true")
+# else:
+#     print("false")
 
 
 #-----------------
 # Q72
 # d = {"name":"abhy","age":20}. Use .pop() on key "city" that doesn't exist. What happens? Use default value.
-
-
+# d={"name":"abhy","age":20}
+# print(d.pop("city"))
+# #KeyError: 'city'
 
 
 #-----------------
 # Q73
 # Create a dict using dict() constructor with name="abhy" and age=20. Print it.
-
-
-
+# d={
+#     "name":"abhy",
+#     "age":20
+# }
+# print(d)
+# d["name"]="abby"
+# print(d)
 
 #-----------------
 # Q74
 # coll1={1,2,3,4} coll2={3,4,5,6} — find symmetric difference (elements not common in both). Print.
-
+# coll1={1,2,3,4}
+# coll2={3,4,5,6}
+# print(coll1.symmetric_difference(coll2))
 
 
 
 #-----------------
 # Q75
 # Create d = {"marks":[85,90,78]}. Append 95 to the marks list inside dict. Print.
-
+# d={"marks":[85,90,78]}
+# d["marks"].append(95)
+# print(d)
 
 
 
 #-----------------
 # Q76
 # Create a set from a list [1,2,2,3,3,3,4]. Print the set and observe duplicates removed.
-
-
+# s={1,2,2,3,3,3,4}
+# print(s)
+# #yes it remove duplicte elements 
 
 
 #-----------------
 # Q77
 # Create d = {"name":"abhy","age":20}. Print all keys as a list. Check if length of keys == length of dict.
-
-
-
+# d = {"name":"abhy","age":20}
+# d_keys=(list(d.keys()))
+# print(d_keys)
+# l=len(d)
+# if len(d_keys)==(l):
+#     print("equal")
+# else:
+#     ("not equal")
 
 #-----------------
 # Q78
 # student = {"name":"abhy","subjects":{"maths":95,"eng":85}}. Update maths to 99 using .update(). Print.
-
-
+# student = {"name":"abhy",
+#            "subjects":{
+#                "maths":95,
+#                "eng":85}
+#                }
+# student["subjects"].update({"maths":99})
+# print(student)
 
 
 #-----------------
 # Q79
 # Create set s = {10,20,30,40,50}. Find max and min value. Print both.
-
+# s = {10,20,30,40,50}
+# print(max(s))
+# print(min(s))
 
 
 
 #-----------------
 # Q80
 # Create d = {"a":1,"b":2,"c":3}. Clear the dict. Print length after clearing.
-
-
-
+# d = {"a":1,"b":2,"c":3}
+# print(len(d))
+# d.clear()
+# print(len(d))
 
 #-----------------
 # Q81
