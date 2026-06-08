@@ -592,87 +592,117 @@
 #-----------------
 # Q54
 # Use .get() with default value to access "marks" from student = {"name":"abhy"}. Return 0 if missing.
-student={"name":"abhy",}
-print(student.get("marks",0))
+# student={"name":"abhy",}
+# print(student.get("marks",0))
 
 
 
 #-----------------
 # Q55
 # Create a set s = {1,2,3,4,5}. Remove 10 using .discard(). Then remove 3 using .remove(). Print.
-
-
+# s={1,2,3,4,5}
+# s.discard(10)
+# s.discard(1)
+# s.remove(3)
+# print(s)
 
 
 #-----------------
 # Q56
 # From d = {"name":"abhy", "age":20}, delete the key "age" using del. Print after.
-
-
-
+# d = {"name":"abhy", "age":20}
+# del(d["age"])
+# print(d)
 
 #-----------------
 # Q57
 # Create d = {"a":1, "b":2, "c":3}. Loop through all keys and print each key.
-
-
+# d = {"a":1, "b":2, "c":3}
+# for key in d.keys():
+#     print(key)
 
 
 #-----------------
 # Q58
 # Create d = {"a":1, "b":2, "c":3}. Loop through all values and print each value.
-
+# d={"a":1,"b":2,"c":3}
+# for values in  d.values():
+#     print(values)
 
 
 
 #-----------------
 # Q59
 # Create d = {"a":1, "b":2, "c":3}. Loop through .items() and print key and value on same line.
-
-
-
+# d = {"a":1, "b":2, "c":3}
+# for key,value in d.items():
+#     print(key,value)
 
 #-----------------
 # Q60
 # student = {"name":"abhy", "subjects":{"maths":95, "eng":85}}. Print only eng marks using .get().
-
-
-
+# student = {"name":"abhy", 
+#           "subjects":{
+#             "maths":95,
+#             "eng":85
+#             }
+#         }
+# print(student.get("subjects").get("eng"))#or
+# # print(student["subjects"]["eng"])
 
 #-----------------
 # Q61
 # Create set s = {1,2,3,4,5}. Check if 3 is in s. Print True or False.
-
+# s = {1,2,3,4,5}
+# if 3 in s:
+#     print("true")
+# else:
+#     print("false")
 
 
 
 #-----------------
 # Q62
 # Create d = {"name":"abhy"}. Check if "name" is in d. Print True or False.
-
+# d = {"name":"abhy"}
+# if "name "in d:
+#     print("true")
+# else:
+#     print("false")
 
 
 
 #-----------------
 # Q63
 # Create d = {"name":"abhy"}. Check if "city" is NOT in d. Print True or False.
-
-
+d = {"name":"abhy"}
+if "city" in d:
+    print("true")
+else:
+    print("false")
 
 
 #-----------------
 # Q64
 # coll1={1,2,3} coll2={4,5,6} — find union. Are there any common elements? Print result.
 
-
+# coll1={1,2,3} 
+# coll2={4,5,6}
+# print(coll1.union(coll2))
+# #there is no comon element if assume there are two 3 then union make it one 3 becouse in
+# # union in common elements one element is remove 
 
 
 #-----------------
 # Q65
 # Create empty dict. Add 5 subjects and marks using a loop. Print the dict.
+# d={}
+# subjects=["maths","sst","science","phy","chem"]
+# marks=[86,89,90,79,84]
 
-
-
+# for a in range (5):
+#     d[subjects[a]]=marks[a]
+#     print(d)
 
 #-----------------
 # Q66
