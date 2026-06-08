@@ -571,26 +571,29 @@
 # Create a set and try to add a list [1,2,3] to it. What error comes? Comment the error.
 
 
-
-
 #-----------------
 # Q52
 # Print type of each value in d = {"name":"abhy", "age":20, "cgpa":9.6}
-
-
-
+# d={"name":"abhy","age":20,"cgpa":9.6}
+# print(type(d))
+# print(type(d["name"]))
+# print(type(d["age"]))
+# print(type(d["cgpa"]))
 
 #-----------------
 # Q53
 # Create dict d = {"x":1, "x":2, "x":3}. Print d["x"]. What do you observe?
+# d={"x":1,"x":2,"x":3}
+# print(d["x"])
 
-
+# # its is ignoring all the values in starting and give the value of last element 
 
 
 #-----------------
 # Q54
 # Use .get() with default value to access "marks" from student = {"name":"abhy"}. Return 0 if missing.
-
+student={"name":"abhy",}
+print(student.get("marks",0))
 
 
 
