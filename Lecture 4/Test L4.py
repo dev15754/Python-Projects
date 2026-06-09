@@ -98,841 +98,841 @@
 # student = {"name":"abhy","subjects":{"maths":95,"eng":85,"phy":90}}. Print all subject names as a list.
 # Create d = {"x":1,"y":2}. Check if "x" in d.keys() and 2 in d.values(). Print both results.
 # Create a full record: name, age, hobbies(set), address(nested dict with city and pin). Print each value using its key.
-
-#-----------------
+# -----------------
 # Q1
 # Create a set with values 1,2,3,4,4,5. Print it and observe the duplicate.
-# value={1,2,3,4,4,5}
-# print(value)
-# # i observe it remove duplicate number from sets 
+value={1,2,3,4,4,5}
+print(value)
+# i observe it remove duplicate number from sets 
 
-#-----------------
+# -----------------
 # Q2
 # Create a dictionary with your name, age, and city. Print the whole dictionary.
-# dict={
-#     "name":"abhy",
-#     "age":19,
-#     "city":"baramulla",
-# }
-# print(dict)
+dict={
+"name":"abhy",
+"age":19,
+"city":"baramulla",
+}
+print(dict)
 
-#-----------------
+# -----------------
 # Q3
 # Create an empty set and a set and print its type.
-# take=set()
-# take1={1,2,3}
+take=set()
+take1={1,2,3}
 
-# print(type(take))
-# print(type(take1))
+print(type(take))
+print(type(take1))
 
-#-----------------
+# -----------------
 # Q4
 # Add "city":"baramulla" to student = {"name":"abhy"} using .update(). Print it.
-# student={}
-# student.update({"city":"baramulla",
-#                 "name":"abhy"})
-# print(student)
+student={}
+student.update({"city":"baramulla",
+"name":"abhy"})
+print(student)
 
-#-----------------
+# -----------------
 # Q5
 # Create collection = {1,2,3,"hello","hello","good"} and print its type.
-# collection= {1,2,3,"hello","hello","good"}
-# print(type(collection))
+collection= {1,2,3,"hello","hello","good"}
+print(type(collection))
 
-#-----------------
+# -----------------
 # Q6
 # Print only the value of "name" from d = {"name":"abhy", "age":20}
 
-# d = {"name":"abhy", "age":20}
-# print(d["name"])
+d = {"name":"abhy", "age":20}
+print(d["name"])
 
 
-#-----------------
+# -----------------
 # Q7
 # Create empty set. Add 1, 2, 3, 3(duplicate), "apna college", (13,22,99). Print.
 
-# s=set()
-# s.add(1)
-# s.add(2)
-# s.add(3)
-# s.add(3)
-# s.add(2)
-# s.add(1)
-# s.add("apna college")
-# s.add((13,22,99))
-# print(s)
+s=set()
+s.add(1)
+s.add(2)
+s.add(3)
+s.add(3)
+s.add(2)
+s.add(1)
+s.add("apna college")
+s.add((13,22,99))
+print(s)
 
 
-#-----------------
+# -----------------
 # Q8
 # Create a nested dictionary with name and subjects (maths:95, eng:85). Print the full subjects dict.
 
-# dict1={
-#     "name":"abhy",
-#     "subjects":{
-#         "maths":95,
-#         "eng":85
-#     }
-# }
-# print(dict1)
-# print(dict1["subjects"]["maths"])
-#-----------------
+dict1={
+"name":"abhy",
+"subjects":{
+"maths":95,
+"eng":85
+}
+}
+print(dict1)
+print(dict1["subjects"]["maths"])
+# -----------------
 # Q9
 # Find union of coll1={1,2,3,4,8} and coll2={2,3,9,8,7}. Print result and both originals.
-# coll1={1,2,3,4,8}
-# coll2={2,3,9,8,7}
-# print(coll1.union(coll2))
+coll1={1,2,3,4,8}
+coll2={2,3,9,8,7}
+print(coll1.union(coll2))
 
 
-#-----------------
+# -----------------
 # Q10
 # Print all keys of student = {"name":"abhy", "cgpa":9.6}
-# data= {"name":"abhy", "cgpa":9.6}
-# print(data.keys())
+data= {"name":"abhy", "cgpa":9.6}
+print(data.keys())
+
+
+-----------------
+Q11
+Create a set {1,2,3,"apna college",(13,22,99)}. Remove 2 and print.
+demo={1,2,3,"apna college",(13,22,99)}
+demo.remove(2)
+print(demo)
+
+
+
+-----------------
+Q12
+Print the value at integer key 12 from d = {12:99.9, "name":"abhy"}
+d = {12:99.9, "name":"abhy"}
+print(d[12])
+
+-----------------
+Q13
+Create a set with 3 elements. Print its length, clear it, then print length again.
+demo={1,"apna",25.4}
+print(len(demo))
+demo.clear()
+print(len(demo))
+
+-----------------
+Q14
+Convert keys of student = {"name":"abhy", "cgpa":9.6} to a list and print.
+demo={"name":"abhy", "cgpa":9.6}
+convert=demo.keys()
+print(list(convert))
+# or 
+demo={"name":"abhy", "cgpa":9.6}
+print(list(demo.keys()))
 
+-----------------
+Q15
+Create coll = {"abhy","zebra","tiger",5,7}. Pop 3 elements one by one and print each.
+coll = {"abhy","zebra","tiger",5,7}
+print(coll.pop())
+print(coll.pop())
+print(coll.pop())
 
-#-----------------
-# Q11
-# Create a set {1,2,3,"apna college",(13,22,99)}. Remove 2 and print.
-# demo={1,2,3,"apna college",(13,22,99)}
-# demo.remove(2)
-# print(demo)
-
-
-
-#-----------------
-# Q12
-# Print the value at integer key 12 from d = {12:99.9, "name":"abhy"}
-# d = {12:99.9, "name":"abhy"}
-# print(d[12])
-
-#-----------------
-# Q13
-# Create a set with 3 elements. Print its length, clear it, then print length again.
-# demo={1,"apna",25.4}
-# print(len(demo))
-# demo.clear()
-# print(len(demo))
-
-#-----------------
-# Q14
-# Convert keys of student = {"name":"abhy", "cgpa":9.6} to a list and print.
-# demo={"name":"abhy", "cgpa":9.6}
-# convert=demo.keys()
-# print(list(convert))
-## or 
-# demo={"name":"abhy", "cgpa":9.6}
-# print(list(demo.keys()))
-
-#-----------------      
-# Q15
-# Create coll = {"abhy","zebra","tiger",5,7}. Pop 3 elements one by one and print each.
-# coll = {"abhy","zebra","tiger",5,7}
-# print(coll.pop())
-# print(coll.pop())
-# print(coll.pop())
-
-#-----------------
-# Q16
-# Print all values of student = {"name":"abhy", "cgpa":9.6}
-# student = {"name":"abhy", "cgpa":9.6}
-# print(student.values())
-
-
-#-----------------
-# Q17
-# Find intersection of coll1={1,2,3,4,8} and coll2={2,3,9,8,7}. Print result.
-# coll1={1,2,3,4,8}
-# coll2={2,3,9,8,7}
-# print(coll1.intersection(coll2))
-
-
-#-----------------
-# Q18
-# Create a dict where "sub" stores a tuple of 3 subjects and "marks" stores a list of 3 marks. Print both.
-# demo={
-#     "sub":("maths","eng","phy"),
-#     "marks":[85,98,78]
-# }
-# print(demo)
-# print(demo["sub"])
-# print(demo["marks"])
-
-
-#-----------------
-# Q19
-# sub = {"python","java","c++","c","python","c++","python","c"} — how many classrooms needed? Print count.
-# sub = {"python","java","c++","c","python","c++","python","c"}
-# classroom=len(sub)
-# print("total classes need is ",classroom)
-
-
-
-
-#-----------------
-# Q20
-# Convert values of student = {"name":"abhy", "cgpa":9.6} to a list and print.
-# student = {"name":"abhy", "cgpa":9.6}
-# print(list(student.values()))
-
-
-
-#-----------------
-# Q21
-# Store 9 (int) and 9.0 (float) as print separate values in a set.
-# demo={9,"9.00"}
-# print(demo)
-
-#-----------------
-# Q22
-# Print all key-value pairs of student = {"name":"abhy", "cgpa":9.6} as tuples.
-# student = {"name":"abhy", "cgpa":9.6}
-# print(student.items())
-
-
-
-#-----------------
-# Q23
-# data = {8,5,9,"9"} — how many elements does this have and why?
-# data = {8,5,9,"9"}
-# print(data)
-
-# #it has 4 elemets becouse it has no common one inside the set but if we see there are two 9 but one 
-# is int and other is str 
-
-#-----------------
-# Q24
-# Convert .items() of student = {"name":"abhy", "cgpa":9.6} to a list and print.
-
-# student = {"name":"abhy", "cgpa":9.6}
-# print(list(student.items()))
-
-
-#-----------------
-# Q25
-# Try s[0] on a set. What error comes? Write code and comment the error.
-# s = {1, 2, 3}
-# print(s[0])
-# #error as there is no index defined in sets so the error come if we want the result convert to list then 
-
-
-#-----------------
-# Q26
-# Use .get() to access "name" from student = {"name":"abhy"}
-# student = {"name":"abhy"}
-# print(student.get("name"))
-
-
-
-#-----------------
-# Q27
-# Add tuple (13,22,99) to an empty set and print.
-# value=set()
-# value.add((13,22,99))
-# print(value)
-
-
-#-----------------
-# Q28
-# Use .get() to access "city" which doesn't exist first update the city then .get  .student = {"name":"abhy"}. then print
-
-# student = {"name":"abhy"}
-# student.update({"city":"baramulla",})
-# print(student.get("city"))
-
-
-#-----------------
-# Q29
-# Create one empty set and one empty dict. Print the type of each.
-
-# value=set()
-# value2={}
-# print(type(value))
-# print(type(value2))
-
-#-----------------
-# Q30
-# Start with d = {"age":20}. Change age to 19.5 and print.
-# d = {"age":20}
-# (d.update({"age":19.5,}))
-# print(d)
-
-
-
-#-----------------
-# Q31
-# Prove .union() doesn't change the originals. Print coll1 before union and after.
-# coll1={1,2,3,4,5,6,8}
-# coll2={6,7,8,9,1,2,5}
-# print(coll1)
-# print(coll2)
-# print(coll1.union(coll2))
-
-# print(coll1)
-# print(coll2)
-
-#-----------------
-# Q32
-# Print the type of d = {"a":1}
-# d = {"a":1}
-# print(type(d))
-
-
-
-#-----------------
-# Q33
-# Prove .intersection() doesn't change the originals. Print coll1 before and after.
-
-# coll1={1,2,3,4,5,6}
-# coll2={9,8,7,2,3,6}
-# print(coll1)
-# print(coll2)
-# print(coll1.intersection(coll2))
-
-# print(coll1)
-# print(coll2)
-
-
-#-----------------
-# Q34
-# From student = {"name":"abhy", "subjects":{"maths":95,"eng":85}}, print only the maths score.
-
-# student = {"name":"abhy", 
-#            "subjects":{
-#                "maths":95,
-#                "eng":85
-#              }
-#           }
-# print(student.get("subjects").get ("maths"))
-
-#-----------------
-# Q35
-# s = {10,20,30} — print length, clear it, print length again.
-# s = {10,20,30}
-# print(len(s))
-# s.clear()
-# print(len(s))
+-----------------
+Q16
+Print all values of student = {"name":"abhy", "cgpa":9.6}
+student = {"name":"abhy", "cgpa":9.6}
+print(student.values())
 
 
+-----------------
+Q17
+Find intersection of coll1={1,2,3,4,8} and coll2={2,3,9,8,7}. Print result.
+coll1={1,2,3,4,8}
+coll2={2,3,9,8,7}
+print(coll1.intersection(coll2))
 
-#-----------------
-# Q36
-# Store "table":"a piece of furniture" and "cat":"a small animal" in a dict. Print the meaning of "table".
-
-# dict1={
-#     "table":"a piece of furniture",
-#     "cat":"a animal",
-# }
-# print(dict1.get("table"))
-
-#-----------------
-# Q37
-# coll1={1,2,3,8} coll2={2,3,9} — find intersection and print only the common elements.
-# coll1={1,2,3,8}
-# coll2={2,3,9}
-# print("common elements",coll1.intersection(coll2))
-
-
-
-#-----------------
-# Q38
-# Start with empty dict. Add phy, maths, chem marks using .update() all at once. Print.
-# demo={}
-# demo.update({"phy":95,"chem":95, "maths":95 })
-# print(demo)
-
-#-----------------
-# Q39
-# Create dict with is_adult:True and cgpa:9.6. Print the type of each value.
-# dict1={
-#     "is_adult":True,
-#     "cgpa":9.6
-# }
-# print(type(dict1["is_adult"]))
-# print(type(dict1["cgpa"]))
-
-#-----------------
-# Q40
-# Why can you add a tuple to a set but not a list? Show with code.
-# s = set()
-# s.add((1,2,3))        #  tuple is hashable
-# print(s)
-
-# s.add([1,2,3])        #  TypeError: unhashable type: 'list'
-
-
-#-----------------
-# Q41
-# Store "extra marks":94.8 in a dict. Print its type.
-# dict1={
-#     "extra marks":94.8
-# }
-# print(type(dict1["extra marks"]))
-
-
-#-----------------
-# Q42
-# Ask user for phy, maths, chem marks using input(). Store in empty dict and print.
-# dict={}
-# phy_marks=int(input("enter phy marks:"))
-# dict.update({"phy":phy_marks,})
-# chem_marks=int(input("enter chem marks"))
-# dict.update({"chem":chem_marks,})
-# maths_marks=int(input("enter maths marks"))
-# dict.update({"maths":maths_marks,})
-
-# print(dict)
-
 
-#-----------------
-# Q43
-# Add "science":88 to the subjects dict inside student = {"name":"abhy", "subjects":{"maths":95}}. Print.
-# student = {"name":"abhy",
-#             "subjects":{
-#                 "maths":95
-#                 }
-#            }
-# student["subjects"]["science"] = 88
-# print(student)
-
-
-#-----------------
-# Q44
-# Create dict with keys: "name"(str), 12(int), True(bool). Print all three values.
-# d = {"name":"abhy", 12:99.9, True:"yes"}
-# print(d["name"])
-# print(d[12])
-# print(d[True])
-
-
-
-#-----------------
-# Q45
-# Use .get() to access "city" from student dict. If missing, return "unknown".
-
-# student = {"name":"abhy"}
-# print(student.get("city", "unknown"))
+-----------------
+Q18
+Create a dict where "sub" stores a tuple of 3 subjects and "marks" stores a list of 3 marks. Print both.
+demo={
+"sub":("maths","eng","phy"),
+"marks":[85,98,78]
+}
+print(demo)
+print(demo["sub"])
+print(demo["marks"])
 
-#-----------------
-# Q46
-# d = {"name":"abhy","city":"baramulla"} — update city to "srinagar". Print.
-
-# d = {"name":"abhy","city":"baramulla"}
-# d["city"]="srinagar"
-# print(d)
-
-
-#-----------------
-# Q47
-# What prints? d = {"x":1, "x":2} → print(d["x"])
 
-# d = {"x":1, "x":2}
-# print(d["x"])
+-----------------
+Q19
+sub = {"python","java","c++","c","python","c++","python","c"} — how many classrooms needed? Print count.
+sub = {"python","java","c++","c","python","c++","python","c"}
+classroom=len(sub)
+print("total classes need is ",classroom)
 
-# #ignore first value
 
-#-----------------
-# Q48
-# student = {"name":"abhy","subjects":{"maths":95}} — use .get() on subjects to access "eng". If missing return 0.
-# student = {"name":"abhy","subjects":{"maths":95}}
-# print(student["subjects"].get("eng", 0))
-
 
-#-----------------
-# Q49
-# Print each key-value pair from student = {"name":"abhy","age":20} on a separate line using .items().
 
-# student = {"name":"abhy","age":20}
-# for key ,value in student.items():
-#     print(key,value)
+-----------------
+Q20
+Convert values of student = {"name":"abhy", "cgpa":9.6} to a list and print.
+student = {"name":"abhy", "cgpa":9.6}
+print(list(student.values()))
 
-
-#-----------------
-# Q50
-# Create a full student record with name, age, is_adult(bool), marks(list), subjects(nested dict with 2 subjects). Print each value using its key.
-# student = {
-#     "name": "abhy",
-#     "age": 20,
-#     "is_adult": True,
-#     "marks": [95, 88, 76],
-#     "subjects": {
-#         "maths": 95, 
-#         "eng": 88
-#         }
-# }
-
-# print(student["name"])
-# print(student["age"])
-# print(student["is_adult"])
-# print(student["marks"])
-# print(student["subjects"])
-# #-----------------
-# Q51
-# Create a set and try to add a list [1,2,3] to it. What error comes? Comment the error.
 
 
-#-----------------
-# Q52
-# Print type of each value in d = {"name":"abhy", "age":20, "cgpa":9.6}
-# d={"name":"abhy","age":20,"cgpa":9.6}
-# print(type(d))
-# print(type(d["name"]))
-# print(type(d["age"]))
-# print(type(d["cgpa"]))
+-----------------
+Q21
+Store 9 (int) and 9.0 (float) as print separate values in a set.
+demo={9,"9.00"}
+print(demo)
 
-#-----------------
-# Q53
-# Create dict d = {"x":1, "x":2, "x":3}. Print d["x"]. What do you observe?
-# d={"x":1,"x":2,"x":3}
-# print(d["x"])
+-----------------
+Q22
+Print all key-value pairs of student = {"name":"abhy", "cgpa":9.6} as tuples.
+student = {"name":"abhy", "cgpa":9.6}
+print(student.items())
 
-# # its is ignoring all the values in starting and give the value of last element 
 
 
-#-----------------
-# Q54
-# Use .get() with default value to access "marks" from student = {"name":"abhy"}. Return 0 if missing.
-# student={"name":"abhy",}
-# print(student.get("marks",0))
+-----------------
+Q23
+data = {8,5,9,"9"} — how many elements does this have and why?
+data = {8,5,9,"9"}
+print(data)
 
+#it has 4 elemets becouse it has no common one inside the set but if we see there are two 9 but one 
+is int and other is str 
 
+-----------------
+Q24
+Convert .items() of student = {"name":"abhy", "cgpa":9.6} to a list and print.
 
-#-----------------
-# Q55
-# Create a set s = {1,2,3,4,5}. Remove 10 using .discard(). Then remove 3 using .remove(). Print.
-# s={1,2,3,4,5}
-# s.discard(10)
-# s.discard(1)
-# s.remove(3)
-# print(s)
+student = {"name":"abhy", "cgpa":9.6}
+print(list(student.items()))
 
 
-#-----------------
-# Q56
-# From d = {"name":"abhy", "age":20}, delete the key "age" using del. Print after.
-# d = {"name":"abhy", "age":20}
-# del(d["age"])
-# print(d)
+-----------------
+Q25
+Try s[0] on a set. What error comes? Write code and comment the error.
+s = {1, 2, 3}
+print(s[0])
+#error as there is no index defined in sets so the error come if we want the result convert to list then 
 
-#-----------------
-# Q57
-# Create d = {"a":1, "b":2, "c":3}. Loop through all keys and print each key.
-# d = {"a":1, "b":2, "c":3}
-# for key in d.keys():
-#     print(key)
 
+-----------------
+Q26
+Use .get() to access "name" from student = {"name":"abhy"}
+student = {"name":"abhy"}
+print(student.get("name"))
 
-#-----------------
-# Q58
-# Create d = {"a":1, "b":2, "c":3}. Loop through all values and print each value.
-# d={"a":1,"b":2,"c":3}
-# for values in  d.values():
-#     print(values)
 
 
+-----------------
+Q27
+Add tuple (13,22,99) to an empty set and print.
+value=set()
+value.add((13,22,99))
+print(value)
 
-#-----------------
-# Q59
-# Create d = {"a":1, "b":2, "c":3}. Loop through .items() and print key and value on same line.
-# d = {"a":1, "b":2, "c":3}
-# for key,value in d.items():
-#     print(key,value)
 
-#-----------------
-# Q60
-# student = {"name":"abhy", "subjects":{"maths":95, "eng":85}}. Print only eng marks using .get().
-# student = {"name":"abhy", 
-#           "subjects":{
-#             "maths":95,
-#             "eng":85
-#             }
-#         }
-# print(student.get("subjects").get("eng"))#or
-# # print(student["subjects"]["eng"])
+-----------------
+Q28
+Use .get() to access "city" which doesn't exist first update the city then .get  .student = {"name":"abhy"}. then print
 
-#-----------------
-# Q61
-# Create set s = {1,2,3,4,5}. Check if 3 is in s. Print True or False.
-# s = {1,2,3,4,5}
-# if 3 in s:
-#     print("true")
-# else:
-#     print("false")
+student = {"name":"abhy"}
+student.update({"city":"baramulla",})
+print(student.get("city"))
 
 
+-----------------
+Q29
+Create one empty set and one empty dict. Print the type of each.
 
-#-----------------
-# Q62
-# Create d = {"name":"abhy"}. Check if "name" is in d. Print True or False.
-# d = {"name":"abhy"}
-# if "name "in d:
-#     print("true")
-# else:
-#     print("false")
+value=set()
+value2={}
+print(type(value))
+print(type(value2))
 
+-----------------
+Q30
+Start with d = {"age":20}. Change age to 19.5 and print.
+d = {"age":20}
+(d.update({"age":19.5,}))
+print(d)
 
 
-#-----------------
-# Q63
-# Create d = {"name":"abhy"}. Check if "city" is NOT in d. Print True or False.
-# d = {"name":"abhy"}
-# if "city" in d:
-#     print("true")
-# else:
-#     print("false")
 
+-----------------
+Q31
+Prove .union() doesn't change the originals. Print coll1 before union and after.
+coll1={1,2,3,4,5,6,8}
+coll2={6,7,8,9,1,2,5}
+print(coll1)
+print(coll2)
+print(coll1.union(coll2))
 
-#-----------------
-# Q64
-# coll1={1,2,3} coll2={4,5,6} — find union. Are there any common elements? Print result.
+print(coll1)
+print(coll2)
 
-# coll1={1,2,3} 
-# coll2={4,5,6}
-# print(coll1.union(coll2))
-# #there is no comon element if assume there are two 3 then union make it one 3 becouse in
-# # union in common elements one element is remove 
+-----------------
+Q32
+Print the type of d = {"a":1}
+d = {"a":1}
+print(type(d))
 
 
-#-----------------
-# Q65
-# Create empty dict. Add 5 subjects and marks using a loop. Print the dict.
-# d={}
-# subjects=["maths","sst","science","phy","chem"]
-# marks=[86,89,90,79,84]
-
-# for a in range (5):
-#     d[subjects[a]]=marks[a]
-#     print(d)
 
-#-----------------
-# Q66
-# d = {"name":"abhy","age":20,"city":"bara"} — delete "city" using .pop(). Print returned value and dict.
-# d = {"name":"abhy","age":20,"city":"bara"}
-# print(d.pop("city"))
-# print(d)
+-----------------
+Q33
+Prove .intersection() doesn't change the originals. Print coll1 before and after.
 
+coll1={1,2,3,4,5,6}
+coll2={9,8,7,2,3,6}
+print(coll1)
+print(coll2)
+print(coll1.intersection(coll2))
 
-#-----------------
-# Q67
-# Create set s = {1,2,3,4,5}. Find difference of s from {3,4,5,6,7}. Print result.
-# s = {1,2,3,4,5}
-# d={3,4,5,6,7}
-# print(s.intersection(d))
+print(coll1)
+print(coll2)
 
 
-#-----------------
-# Q68
-# student = {"name":"abhy","cgpa":9.6}. Print length of the dict using len().
-# student = {"name":"abhy","cgpa":9.6}
-# print(len(student))
+-----------------
+Q34
+From student = {"name":"abhy", "subjects":{"maths":95,"eng":85}}, print only the maths score.
 
+student = {"name":"abhy", 
+"subjects":{
+"maths":95,
+"eng":85
+}
+}
+print(student.get("subjects").get ("maths"))
 
-#-----------------
-# Q69
-# Create d = {"a":1,"b":2}. Copy it to d2 using .copy(). Change d2["a"] to 99. Print both d and d2.
-# d={"a":1,"b":2}
-# d2=d.copy()
-# d2["a"]=99
-# print(d2)
+-----------------
+Q35
+s = {10,20,30} — print length, clear it, print length again.
+s = {10,20,30}
+print(len(s))
+s.clear()
+print(len(s))
 
 
 
-#-----------------
-# Q70
-# Create set s = {1,2,3}. Check if s is subset of {1,2,3,4,5}. Print True or False.
-
-# s = {1,2,3}
-# s2={1,2,3,4,5}
-# if s.issubset(s2):
-#     print("true")
-# else:
-#     print("false")
+-----------------
+Q36
+Store "table":"a piece of furniture" and "cat":"a small animal" in a dict. Print the meaning of "table".
 
-#-----------------
-# Q71
-# Create s = {1,2,3,4,5}. Check if s is superset of {1,2,3}. Print True or False.
-# s={1,2,3,4,5}
-# s2={1,2,3}
-# if s.issuperset(s2):
-#     print("true")
-# else:
-#     print("false")
+dict1={
+"table":"a piece of furniture",
+"cat":"a animal",
+}
+print(dict1.get("table"))
 
+-----------------
+Q37
+coll1={1,2,3,8} coll2={2,3,9} — find intersection and print only the common elements.
+coll1={1,2,3,8}
+coll2={2,3,9}
+print("common elements",coll1.intersection(coll2))
 
-#-----------------
-# Q72
-# d = {"name":"abhy","age":20}. Use .pop() on key "city" that doesn't exist. What happens? Use default value.
-# d={"name":"abhy","age":20}
-# print(d.pop("city"))
-# #KeyError: 'city'
 
 
-#-----------------
-# Q73
-# Create a dict using dict() constructor with name="abhy" and age=20. Print it.
-# d={
-#     "name":"abhy",
-#     "age":20
-# }
-# print(d)
-# d["name"]="abby"
-# print(d)
+-----------------
+Q38
+Start with empty dict. Add phy, maths, chem marks using .update() all at once. Print.
+demo={}
+demo.update({"phy":95,"chem":95, "maths":95 })
+print(demo)
 
-#-----------------
-# Q74
-# coll1={1,2,3,4} coll2={3,4,5,6} — find symmetric difference (elements not common in both). Print.
-# coll1={1,2,3,4}
-# coll2={3,4,5,6}
-# print(coll1.symmetric_difference(coll2))
+-----------------
+Q39
+Create dict with is_adult:True and cgpa:9.6. Print the type of each value.
+dict1={
+"is_adult":True,
+"cgpa":9.6
+}
+print(type(dict1["is_adult"]))
+print(type(dict1["cgpa"]))
 
+-----------------
+Q40
+Why can you add a tuple to a set but not a list? Show with code.
+s = set()
+s.add((1,2,3))        #  tuple is hashable
+print(s)
 
+s.add([1,2,3])        #  TypeError: unhashable type: 'list'
 
-#-----------------
-# Q75
-# Create d = {"marks":[85,90,78]}. Append 95 to the marks list inside dict. Print.
-# d={"marks":[85,90,78]}
-# d["marks"].append(95)
-# print(d)
 
+-----------------
+Q41
+Store "extra marks":94.8 in a dict. Print its type.
+dict1={
+"extra marks":94.8
+}
+print(type(dict1["extra marks"]))
 
 
-#-----------------
-# Q76
-# Create a set from a list [1,2,2,3,3,3,4]. Print the set and observe duplicates removed.
-# s={1,2,2,3,3,3,4}
-# print(s)
-# #yes it remove duplicte elements 
+-----------------
+Q42
+Ask user for phy, maths, chem marks using input(). Store in empty dict and print.
+dict={}
+phy_marks=int(input("enter phy marks:"))
+dict.update({"phy":phy_marks,})
+chem_marks=int(input("enter chem marks"))
+dict.update({"chem":chem_marks,})
+maths_marks=int(input("enter maths marks"))
+dict.update({"maths":maths_marks,})
 
+print(dict)
 
-#-----------------
-# Q77
-# Create d = {"name":"abhy","age":20}. Print all keys as a list. Check if length of keys == length of dict.
-# d = {"name":"abhy","age":20}
-# d_keys=(list(d.keys()))
-# print(d_keys)
-# l=len(d)
-# if len(d_keys)==(l):
-#     print("equal")
-# else:
-#     ("not equal")
 
-#-----------------
-# Q78
-# student = {"name":"abhy","subjects":{"maths":95,"eng":85}}. Update maths to 99 using .update(). Print.
-# student = {"name":"abhy",
-#            "subjects":{
-#                "maths":95,
-#                "eng":85}
-#                }
-# student["subjects"].update({"maths":99})
-# print(student)
+-----------------
+Q43
+Add "science":88 to the subjects dict inside student = {"name":"abhy", "subjects":{"maths":95}}. Print.
+student = {"name":"abhy",
+"subjects":{
+"maths":95
+}
+}
+student["subjects"]["science"] = 88
+print(student)
 
 
-#-----------------
-# Q79
-# Create set s = {10,20,30,40,50}. Find max and min value. Print both.
-# s = {10,20,30,40,50}
-# print(max(s))
-# print(min(s))
+-----------------
+Q44
+Create dict with keys: "name"(str), 12(int), True(bool). Print all three values.
+d = {"name":"abhy", 12:99.9, True:"yes"}
+print(d["name"])
+print(d[12])
+print(d[True])
 
 
 
-#-----------------
-# Q80
-# Create d = {"a":1,"b":2,"c":3}. Clear the dict. Print length after clearing.
-# d = {"a":1,"b":2,"c":3}
-# print(len(d))
-# d.clear()
-# print(len(d))
+-----------------
+Q45
+Use .get() to access "city" from student dict. If missing, return "unknown".
 
-#-----------------
-# Q81
-# Create two dicts d1 = {"a":1} and d2 = {"b":2}. Merge them into one dict. Print.
-# d1 = {"a":1}
-# d2 = {"b":2}
-# d3={}
-# d3.update(d1)
-# d3.update(d2)
-# print(d3)
+student = {"name":"abhy"}
+print(student.get("city", "unknown"))
 
-#-----------------
-# Q82
-# Create s = {"apple","banana","mango"}. Check if "grape" is in s. Print result.
-# s = {"apple","banana","mango",}
-# if "grape" in s:
-#     print("yes",s)
-# else:
-#     print("grape is not in set")
+-----------------
+Q46
+d = {"name":"abhy","city":"baramulla"} — update city to "srinagar". Print.
 
+d = {"name":"abhy","city":"baramulla"}
+d["city"]="srinagar"
+print(d)
 
-#-----------------
-# Q83
-# d = {"name":"abhy","age":20,"city":"bara"}. Print only keys that have string values.
-# d = {"name":"abhy","age":20,"city":"bara"}
-# for keys in d:
-#     if isinstance(d[keys],str):
-#         print(keys)
 
+-----------------
+Q47
+What prints? d = {"x":1, "x":2} → print(d["x"])
 
-#-----------------
-# Q84
-# Create a set s = {1,2,3}. Try to change s[0] = 99. What error comes? Comment it.
+d = {"x":1, "x":2}
+print(d["x"])
 
-# s1= {1,2,3}
-# print (s1)
-#error 
+#ignore first value
 
+-----------------
+Q48
+student = {"name":"abhy","subjects":{"maths":95}} — use .get() on subjects to access "eng". If missing return 0.
+student = {"name":"abhy","subjects":{"maths":95}}
+print(student["subjects"].get("eng", 0))
 
-#-----------------
-# Q85
-# Create d = {"cgpa":9.6,"age":20}. Print sum of all values.
-# d = {"cgpa":9.6,"age":20}
-# value2=d.values()
-# print(value2)
-# print(sum(value2))
 
+-----------------
+Q49
+Print each key-value pair from student = {"name":"abhy","age":20} on a separate line using .items().
 
+student = {"name":"abhy","age":20}
+for key ,value in student.items():
+print(key,value)
 
-#-----------------
-# Q86
-# Create s1 = {1,2,3} and s2 = {1,2,3}. Check if both sets are equal. Print True or False.
-# s1 = {1,2,3} 
-# s2 = {1,2,3}
-# if s1 == s2:
-#     print("t")
-# else:
-#     print("f")
 
+-----------------
+Q50
+Create a full student record with name, age, is_adult(bool), marks(list), subjects(nested dict with 2 subjects). Print each value using its key.
+student = {
+"name": "abhy",
+"age": 20,
+"is_adult": True,
+"marks": [95, 88, 76],
+"subjects": {
+"maths": 95, 
+"eng": 88
+}
+}
+
+print(student["name"])
+print(student["age"])
+print(student["is_adult"])
+print(student["marks"])
+print(student["subjects"])
+#-----------------
+Q51
+Create a set and try to add a list [1,2,3] to it. What error comes? Comment the error.
+
+
+-----------------
+Q52
+Print type of each value in d = {"name":"abhy", "age":20, "cgpa":9.6}
+d={"name":"abhy","age":20,"cgpa":9.6}
+print(type(d))
+print(type(d["name"]))
+print(type(d["age"]))
+print(type(d["cgpa"]))
+
+-----------------
+Q53
+Create dict d = {"x":1, "x":2, "x":3}. Print d["x"]. What do you observe?
+d={"x":1,"x":2,"x":3}
+print(d["x"])
+
+# its is ignoring all the values in starting and give the value of last element 
 
+
+-----------------
+Q54
+Use .get() with default value to access "marks" from student = {"name":"abhy"}. Return 0 if missing.
+student={"name":"abhy",}
+print(student.get("marks",0))
 
-#-----------------
-# Q87
-# student = {"name":"abhy","marks":[85,90,78]}. Print the second mark from the list inside dict.
 
-# student = {"name":"abhy","marks":[85,90,78]}
-# print(student["marks"][1])
+
+-----------------
+Q55
+Create a set s = {1,2,3,4,5}. Remove 10 using .discard(). Then remove 3 using .remove(). Print.
+s={1,2,3,4,5}
+s.discard(10)
+s.discard(1)
+s.remove(3)
+print(s)
+
+
+-----------------
+Q56
+From d = {"name":"abhy", "age":20}, delete the key "age" using del. Print after.
+d = {"name":"abhy", "age":20}
+del(d["age"])
+print(d)
+
+-----------------
+Q57
+Create d = {"a":1, "b":2, "c":3}. Loop through all keys and print each key.
+d = {"a":1, "b":2, "c":3}
+for key in d.keys():
+print(key)
+
+
+-----------------
+Q58
+Create d = {"a":1, "b":2, "c":3}. Loop through all values and print each value.
+d={"a":1,"b":2,"c":3}
+for values in  d.values():
+print(values)
+
+
+
+-----------------
+Q59
+Create d = {"a":1, "b":2, "c":3}. Loop through .items() and print key and value on same line.
+d = {"a":1, "b":2, "c":3}
+for key,value in d.items():
+print(key,value)
 
+-----------------
+Q60
+student = {"name":"abhy", "subjects":{"maths":95, "eng":85}}. Print only eng marks using .get().
+student = {"name":"abhy", 
+"subjects":{
+"maths":95,
+"eng":85
+}
+}
+print(student.get("subjects").get("eng"))#or
+# print(student["subjects"]["eng"])
+
+-----------------
+Q61
+Create set s = {1,2,3,4,5}. Check if 3 is in s. Print True or False.
+s = {1,2,3,4,5}
+if 3 in s:
+print("true")
+else:
+print("false")
+
+
+
+-----------------
+Q62
+Create d = {"name":"abhy"}. Check if "name" is in d. Print True or False.
+d = {"name":"abhy"}
+if "name "in d:
+print("true")
+else:
+print("false")
+
+
+
+-----------------
+Q63
+Create d = {"name":"abhy"}. Check if "city" is NOT in d. Print True or False.
+d = {"name":"abhy"}
+if "city" in d:
+print("true")
+else:
+print("false")
+
+
+-----------------
+Q64
+coll1={1,2,3} coll2={4,5,6} — find union. Are there any common elements? Print result.
+
+coll1={1,2,3} 
+coll2={4,5,6}
+print(coll1.union(coll2))
+#there is no comon element if assume there are two 3 then union make it one 3 becouse in
+# union in common elements one element is remove 
+
+
+-----------------
+Q65
+Create empty dict. Add 5 subjects and marks using a loop. Print the dict.
+d={}
+subjects=["maths","sst","science","phy","chem"]
+marks=[86,89,90,79,84]
+
+for a in range (5):
+d[subjects[a]]=marks[a]
+print(d)
+
+-----------------
+Q66
+d = {"name":"abhy","age":20,"city":"bara"} — delete "city" using .pop(). Print returned value and dict.
+d = {"name":"abhy","age":20,"city":"bara"}
+print(d.pop("city"))
+print(d)
+
+
+-----------------
+Q67
+Create set s = {1,2,3,4,5}. Find difference of s from {3,4,5,6,7}. Print result.
+s = {1,2,3,4,5}
+d={3,4,5,6,7}
+print(s.intersection(d))
+
+
+-----------------
+Q68
+student = {"name":"abhy","cgpa":9.6}. Print length of the dict using len().
+student = {"name":"abhy","cgpa":9.6}
+print(len(student))
+
+
+-----------------
+Q69
+Create d = {"a":1,"b":2}. Copy it to d2 using .copy(). Change d2["a"] to 99. Print both d and d2.
+d={"a":1,"b":2}
+d2=d.copy()
+d2["a"]=99
+print(d2)
+
+
+
+-----------------
+Q70
+Create set s = {1,2,3}. Check if s is subset of {1,2,3,4,5}. Print True or False.
+
+s = {1,2,3}
+s2={1,2,3,4,5}
+if s.issubset(s2):
+print("true")
+else:
+print("false")
+
+-----------------
+Q71
+Create s = {1,2,3,4,5}. Check if s is superset of {1,2,3}. Print True or False.
+s={1,2,3,4,5}
+s2={1,2,3}
+if s.issuperset(s2):
+print("true")
+else:
+print("false")
+
+
+-----------------
+Q72
+d = {"name":"abhy","age":20}. Use .pop() on key "city" that doesn't exist. What happens? Use default value.
+d={"name":"abhy","age":20}
+print(d.pop("city"))
+#KeyError: 'city'
+
+
+-----------------
+Q73
+Create a dict using dict() constructor with name="abhy" and age=20. Print it.
+d={
+"name":"abhy",
+"age":20
+}
+print(d)
+d["name"]="abby"
+print(d)
+
+-----------------
+Q74
+coll1={1,2,3,4} coll2={3,4,5,6} — find symmetric difference (elements not common in both). Print.
+coll1={1,2,3,4}
+coll2={3,4,5,6}
+print(coll1.symmetric_difference(coll2))
+
+
+
+-----------------
+Q75
+Create d = {"marks":[85,90,78]}. Append 95 to the marks list inside dict. Print.
+d={"marks":[85,90,78]}
+d["marks"].append(95)
+print(d)
+
+
+
+-----------------
+Q76
+Create a set from a list [1,2,2,3,3,3,4]. Print the set and observe duplicates removed.
+s={1,2,2,3,3,3,4}
+print(s)
+#yes it remove duplicte elements 
+
+
+-----------------
+Q77
+Create d = {"name":"abhy","age":20}. Print all keys as a list. Check if length of keys == length of dict.
+d = {"name":"abhy","age":20}
+d_keys=(list(d.keys()))
+print(d_keys)
+l=len(d)
+if len(d_keys)==(l):
+print("equal")
+else:
+("not equal")
+
+-----------------
+Q78
+student = {"name":"abhy","subjects":{"maths":95,"eng":85}}. Update maths to 99 using .update(). Print.
+student = {"name":"abhy",
+"subjects":{
+"maths":95,
+"eng":85}
+}
+student["subjects"].update({"maths":99})
+print(student)
+
+
+-----------------
+Q79
+Create set s = {10,20,30,40,50}. Find max and min value. Print both.
+s = {10,20,30,40,50}
+print(max(s))
+print(min(s))
+
+
+
+-----------------
+Q80
+Create d = {"a":1,"b":2,"c":3}. Clear the dict. Print length after clearing.
+d = {"a":1,"b":2,"c":3}
+print(len(d))
+d.clear()
+print(len(d))
+
+-----------------
+Q81
+Create two dicts d1 = {"a":1} and d2 = {"b":2}. Merge them into one dict. Print.
+d1 = {"a":1}
+d2 = {"b":2}
+d3={}
+d3.update(d1)
+d3.update(d2)
+print(d3)
+
+-----------------
+Q82
+Create s = {"apple","banana","mango"}. Check if "grape" is in s. Print result.
+s = {"apple","banana","mango",}
+if "grape" in s:
+print("yes",s)
+else:
+print("grape is not in set")
+
+
+-----------------
+Q83
+d = {"name":"abhy","age":20,"city":"bara"}. Print only keys that have string values.
+d = {"name":"abhy","age":20,"city":"bara"}
+for keys in d:
+if isinstance(d[keys],str):
+print(keys)
+
+
+-----------------
+Q84
+Create a set s = {1,2,3}. Try to change s[0] = 99. What error comes? Comment it.
+
+s1= {1,2,3}
+print (s1)
+error 
+
+
+-----------------
+Q85
+Create d = {"cgpa":9.6,"age":20}. Print sum of all values.
+d = {"cgpa":9.6,"age":20}
+value2=d.values()
+print(value2)
+print(sum(value2))
+
+
+
+-----------------
+Q86
+Create s1 = {1,2,3} and s2 = {1,2,3}. Check if both sets are equal. Print True or False.
+s1 = {1,2,3} 
+s2 = {1,2,3}
+if s1 == s2:
+print("t")
+else:
+print("f")
+
+
+
+-----------------
+Q87
+student = {"name":"abhy","marks":[85,90,78]}. Print the second mark from the list inside dict.
+
+student = {"name":"abhy","marks":[85,90,78]}
+print(student["marks"][1])
+
+
+-----------------
+Q88
+Create d = {"name":"abhy"}. Add 3 new keys one by one using d["key"] = value syntax. Print final dict. and use .update both ways 
+d = {"name":"abhy"}
+d.update({"age":19,
+"sub":"maths",
+"city":"baramulla"})
+print(d)
+
+a={"name":"abhy"}
+a["class"]=12
+a["roll"]=15
+a["cities"]="bara"
+print(a)
+-----------------
+Q89
+coll1={1,2,3,4,5} coll2={4,5,6,7,8} — print elements in coll1 that are NOT in coll2.
+coll1={1,2,3,4,5} 
+coll2={4,5,6,7,8}
+print(coll1-coll2)
 
-#-----------------
-# Q88
-# Create d = {"name":"abhy"}. Add 3 new keys one by one using d["key"] = value syntax. Print final dict. and use .update both ways 
-# d = {"name":"abhy"}
-# d.update({"age":19,
-#           "sub":"maths",
-#           "city":"baramulla"})
-# print(d)
-
-# a={"name":"abhy"}
-# a["class"]=12
-# a["roll"]=15
-# a["cities"]="bara"
-# print(a)
-#-----------------
-# Q89
-# coll1={1,2,3,4,5} coll2={4,5,6,7,8} — print elements in coll1 that are NOT in coll2.
-# coll1={1,2,3,4,5} 
-# coll2={4,5,6,7,8}
-# print(coll1-coll2)
 
 
 
@@ -940,107 +940,103 @@
 #-----------------
 # Q90
 # Create a dict where keys are numbers 1 to 5 and values are their squares. Print it.
-# d={i:i**2 for i in range (1,6)}
-# print(d)
+d={i:i**2 for i in range (1,6)}
+print(d)
 
 #-----------------
 # Q91
 # Create s = {1,2,3,4,5}. Convert to list, sort descending, print first element.
-# s = {1,2,3,4,5}
-# d=list(s)
-# d.sort(reverse=True)
-# print(d)
+s = {1,2,3,4,5}
+d=list(s)
+d.sort(reverse=True)
+print(d)
 
 #-----------------
 # Q92
 # d = {"name":"abhy","city":"bara"}. Use .get() for both keys and print. Then use .get() for missing key "age" with default 0.
-# d = {"name":"abhy","city":"bara"}
-# print(d.get("name"))
-# print(d.get("city"))
-# print(d.get("age", 0))
+d = {"name":"abhy","city":"bara"}
+print(d.get("name"))
+print(d.get("city"))
+print(d.get("age", 0))
 
 #-----------------
 # Q93
 # Create nested dict with 3 students each having name and marks. Print marks of second student.
-# dict={"total":{
-#     "student1":{"name":"abhy","marks":95},
-#     "student2":{"name":"abhi","marks":90},
-#     "student3":{"name":"abhishek","marks":85},
-# }}
-# print(dict["total"]["student2"]["marks"])
+dict={"total":{
+    "student1":{"name":"abhy","marks":95},
+    "student2":{"name":"abhi","marks":90},
+    "student3":{"name":"abhishek","marks":85},
+}}
+print(dict["total"]["student2"]["marks"])
 
 
 
 #-----------------
 # Q94
 # Create set s = {1,2,3,4,5}. Remove all even numbers and print.
-# s={1,2,3,4,5}
-# for i in s.copy():
-#     if i%2 == 0:
-#         s.remove(i)
-# print (s)
+s={1,2,3,4,5}
+for i in s.copy():
+    if i%2 == 0:
+        s.remove(i)
+print (s)
    
 
 #-----------------
 # Q95
 # d = {"a":10,"b":20,"c":30}. Print the key with the maximum value.
-# d = {"a":10,"b":20,"c":30}
-# print(max(d))
-
-#-----------------
-# Q96
-# Create a dict from two lists — keys=["name","age","city"] values=["abhy",20,"bara"]. Print it.
+d = {"a":10,"b":20,"c":30}
+print(max(d))
 
 
 #-------
 # Q97
 # Create s = {1,2,3}. Add another set {4,5,6} to it using .update(). Print.
-# s = {1,2,3}
-# s.update({4,5,6})
-# print(s)
+s = {1,2,3}
+s.update({4,5,6})
+print(s)
 
 
 
 #-----------------
 # Q98
 # student = {"name":"abhy","subjects":{"maths":95,"eng":85,"phy":90}}. Print all subject names as a list.
-# student = {"name":"abhy",
-#            "subjects":{
-#                "maths":95,
-#                "eng":85,
-#                "phy":90
-#                }
-# }
-# print(list(student["subjects"]))
+student = {"name":"abhy",
+           "subjects":{
+               "maths":95,
+               "eng":85,
+               "phy":90
+               }
+}
+print(list(student["subjects"]))
 
 
 
 #-----------------
 # Q99
 # Create d = {"x":1,"y":2}. Check if "x" in d.keys() and 2 in d.values(). Print both results.
-# d = {"x":1,"y":2}
-# if "x" in d.keys():
-#     print("yes")
-# else:
-#     print(" no key ")
-# if 2 in d.values():
-#     print("yes")
-# else:
-#     print("no value")
+d = {"x":1,"y":2}
+if "x" in d.keys():
+    print("yes")
+else:
+    print(" no key ")
+if 2 in d.values():
+    print("yes")
+else:
+    print("no value")
 
 
 #-----------------
 # Q100
 # Create a full record: name, age, hobbies(set), address(nested dict with city and pin). Print each value using its key.
 
-# dict1={"name":"abhy",
-#        "age":19,
-#        "hobbies":"nothing",
-#        "address":{
-#            "city":"baramulla",
-#            "pin":193101
-#        }
-#        }
-# print(dict1.get("age"))
-# print(dict1.get("address").get("city"))
-# print(dict1["address"]["pin"])
+dict1={"name":"abhy",
+       "age":19,
+       "hobbies":"nothing",
+       "address":{
+           "city":"baramulla",
+           "pin":193101
+       }
+       }
+print(dict1.get("age"))
+print(dict1.get("address").get("city"))
+print(dict1["address"]["pin"])
