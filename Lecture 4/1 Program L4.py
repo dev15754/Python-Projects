@@ -106,4 +106,4 @@
 
 
 
-
+isinstance()#is used to check if a value is of a given type return true or false

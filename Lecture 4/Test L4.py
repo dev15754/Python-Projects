@@ -85,7 +85,7 @@
 # Create d = {"cgpa":9.6,"age":20}. Print sum of all values.
 # Create s1 = {1,2,3} and s2 = {1,2,3}. Check if both sets are equal. Print True or False.
 # student = {"name":"abhy","marks":[85,90,78]}. Print the second mark from the list inside dict.
-# Create d = {"name":"abhy"}. Add 3 new keys one by one using d["key"] = value syntax. Print final dict.
+# Create d = {"name":"abhy"}. Add 3 new keys one by one using d["key"] = value syntax. Print final dict. and use .update both ways 
 # coll1={1,2,3,4,5} coll2={4,5,6,7,8} — print elements in coll1 that are NOT in coll2.
 # Create a dict where keys are numbers 1 to 5 and values are their squares. Print it.
 # Create s = {1,2,3,4,5}. Convert to list, sort descending, print first element.
@@ -848,42 +848,60 @@
 #-----------------
 # Q81
 # Create two dicts d1 = {"a":1} and d2 = {"b":2}. Merge them into one dict. Print.
-
-
-
+# d1 = {"a":1}
+# d2 = {"b":2}
+# d3={}
+# d3.update(d1)
+# d3.update(d2)
+# print(d3)
 
 #-----------------
 # Q82
 # Create s = {"apple","banana","mango"}. Check if "grape" is in s. Print result.
-
-
+# s = {"apple","banana","mango",}
+# if "grape" in s:
+#     print("yes",s)
+# else:
+#     print("grape is not in set")
 
 
 #-----------------
 # Q83
 # d = {"name":"abhy","age":20,"city":"bara"}. Print only keys that have string values.
-
-
+# d = {"name":"abhy","age":20,"city":"bara"}
+# for keys in d:
+#     if isinstance(d[keys],str):
+#         print(keys)
 
 
 #-----------------
 # Q84
 # Create a set s = {1,2,3}. Try to change s[0] = 99. What error comes? Comment it.
 
-
+# s1= {1,2,3}
+# print (s1)
+#error 
 
 
 #-----------------
 # Q85
 # Create d = {"cgpa":9.6,"age":20}. Print sum of all values.
-
+# d = {"cgpa":9.6,"age":20}
+# value2=d.values()
+# print(value2)
+# print(sum(value2))
 
 
 
 #-----------------
 # Q86
 # Create s1 = {1,2,3} and s2 = {1,2,3}. Check if both sets are equal. Print True or False.
-
+# s1 = {1,2,3} 
+# s2 = {1,2,3}
+# if s1 == s2:
+#     print("t")
+# else:
+#     print("f")
 
 
 
@@ -891,19 +909,30 @@
 # Q87
 # student = {"name":"abhy","marks":[85,90,78]}. Print the second mark from the list inside dict.
 
-
+# student = {"name":"abhy","marks":[85,90,78]}
+# print(student["marks"][1])
 
 
 #-----------------
 # Q88
-# Create d = {"name":"abhy"}. Add 3 new keys one by one using d["key"] = value syntax. Print final dict.
+# Create d = {"name":"abhy"}. Add 3 new keys one by one using d["key"] = value syntax. Print final dict. and use .update both ways 
+# d = {"name":"abhy"}
+# d.update({"age":19,
+#           "sub":"maths",
+#           "city":"baramulla"})
+# print(d)
 
-
-
-
+# a={"name":"abhy"}
+# a["class"]=12
+# a["roll"]=15
+# a["cities"]="bara"
+# print(a)
 #-----------------
 # Q89
 # coll1={1,2,3,4,5} coll2={4,5,6,7,8} — print elements in coll1 that are NOT in coll2.
+# coll1={1,2,3,4,5} 
+# coll2={4,5,6,7,8}
+# print(coll1-coll2)
 
 
 
@@ -911,75 +940,107 @@
 #-----------------
 # Q90
 # Create a dict where keys are numbers 1 to 5 and values are their squares. Print it.
-
-
-
+# d={i:i**2 for i in range (1,6)}
+# print(d)
 
 #-----------------
 # Q91
 # Create s = {1,2,3,4,5}. Convert to list, sort descending, print first element.
-
-
-
+# s = {1,2,3,4,5}
+# d=list(s)
+# d.sort(reverse=True)
+# print(d)
 
 #-----------------
 # Q92
 # d = {"name":"abhy","city":"bara"}. Use .get() for both keys and print. Then use .get() for missing key "age" with default 0.
-
-
-
+# d = {"name":"abhy","city":"bara"}
+# print(d.get("name"))
+# print(d.get("city"))
+# print(d.get("age", 0))
 
 #-----------------
 # Q93
 # Create nested dict with 3 students each having name and marks. Print marks of second student.
-
+# dict={"total":{
+#     "student1":{"name":"abhy","marks":95},
+#     "student2":{"name":"abhi","marks":90},
+#     "student3":{"name":"abhishek","marks":85},
+# }}
+# print(dict["total"]["student2"]["marks"])
 
 
 
 #-----------------
 # Q94
 # Create set s = {1,2,3,4,5}. Remove all even numbers and print.
-
-
-
+# s={1,2,3,4,5}
+# for i in s.copy():
+#     if i%2 == 0:
+#         s.remove(i)
+# print (s)
+   
 
 #-----------------
 # Q95
 # d = {"a":10,"b":20,"c":30}. Print the key with the maximum value.
-
-
-
+# d = {"a":10,"b":20,"c":30}
+# print(max(d))
 
 #-----------------
 # Q96
 # Create a dict from two lists — keys=["name","age","city"] values=["abhy",20,"bara"]. Print it.
 
 
-
-
-#-----------------
+#-------
 # Q97
 # Create s = {1,2,3}. Add another set {4,5,6} to it using .update(). Print.
-
+# s = {1,2,3}
+# s.update({4,5,6})
+# print(s)
 
 
 
 #-----------------
 # Q98
 # student = {"name":"abhy","subjects":{"maths":95,"eng":85,"phy":90}}. Print all subject names as a list.
-
+# student = {"name":"abhy",
+#            "subjects":{
+#                "maths":95,
+#                "eng":85,
+#                "phy":90
+#                }
+# }
+# print(list(student["subjects"]))
 
 
 
 #-----------------
 # Q99
 # Create d = {"x":1,"y":2}. Check if "x" in d.keys() and 2 in d.values(). Print both results.
-
-
+# d = {"x":1,"y":2}
+# if "x" in d.keys():
+#     print("yes")
+# else:
+#     print(" no key ")
+# if 2 in d.values():
+#     print("yes")
+# else:
+#     print("no value")
 
 
 #-----------------
 # Q100
 # Create a full record: name, age, hobbies(set), address(nested dict with city and pin). Print each value using its key.
 
-
+# dict1={"name":"abhy",
+#        "age":19,
+#        "hobbies":"nothing",
+#        "address":{
+#            "city":"baramulla",
+#            "pin":193101
+#        }
+#        }
+# print(dict1.get("age"))
+# print(dict1.get("address").get("city"))
+# print(dict1["address"]["pin"])
