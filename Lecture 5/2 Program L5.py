@@ -22,3 +22,15 @@
 # #we simple add step by 2 so know start stop step here step tell what to do we say jump 2 times after prev ans
 # for i in range(2,101,2):
 #    print(i)
+
+#                                              pass Statement 
+#pass is a null statement – does nothing? It is used as a place folder for future code.
+#simple say we usee pass there we we donot need work for today but in future we can add here 
+
+# for i in range(5):
+#     pass# means we do want this should be empty
+
+ 
+# print("some useful work")
+
+

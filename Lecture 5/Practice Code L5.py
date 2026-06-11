@@ -59,11 +59,37 @@
 #Q7
 #search for a number X in this touple using loop
 # (1,4,9,16,25,36,49,64,81,100)
-num=(1,4,9,16,25,36,49,64,81,100)
-x=81
-idx=0
-for el in num:
-    if(el==x):
-        print(x," found at index ",idx)
-        break
-    idx+=1
+# num=(1,4,9,16,25,36,49,64,81,100)
+# x=81
+# idx=0
+# for el in num:
+#     if(el==x):
+#         print(x," found at index ",idx)
+#         break
+#     idx+=1
+
+# # Q8
+# #print numbers from one to hundred using for and range ()
+# for num in range(1,101):
+#     print(num)
+
+
+# # Q9
+# # print numbers from 100 to 1
+# for num in range (100,0,-1):
+#     print(num)
+
+#Q10
+#print a multiplication table of a number n
+# n=int(input("enter table of what u need"))
+# for i in range(1,11):
+#     print(n*i)
+
+#Q11
+#where to find the sum of first n numbers using while
+n=5
+
+sum=0
+for i in range (1,n+1):
+   sum+=i
+print("total sum" ,sum)
