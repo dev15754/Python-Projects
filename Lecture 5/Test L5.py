@@ -101,44 +101,53 @@
 # Print numbers 1 to 10 using for loop with else block, print "done" from else
 # Search for 99 in (1,4,9,16,25) using while loop, print "not found" using else block
 
-#----------------------------
-#Q1
-# Print numbers 1 to 50
-n=1
-while n<=50:
-    print(n)
-    n+=1
+# #----------------------------
+# #Q1
+# # Print numbers 1 to 50
+# n=1
+# while n<=50:
+#     print(n)
+#     n+=1
+
+# #----------------------------
+# #Q2
+# # Print numbers 50 to 1
+# n=50
+# while n>=1:
+#     print(n)
+#     n-=1
 
 
-#----------------------------
-#Q2
-# Print numbers 50 to 1
+# #----------------------------
+# #Q3
+# # Print even numbers from 1 to 100
+# n=1
+# while n<=100:
+#     if n%2==0:
+#         print(n)
+#     n+=1
+  
+# #----------------------------
+# #Q4
+# # Print odd numbers from 1 to 100
+# n=1
+# while n <=100:
+#     if n%2!=0:
+#         print("these are odd numbers:", n)
+#     n+=1
 
-
-
-#----------------------------
-#Q3
-# Print even numbers from 1 to 100
-
-
-
-#----------------------------
-#Q4
-# Print odd numbers from 1 to 100
-
-
-
-#----------------------------
-#Q5
-# Print numbers 1 to 100 using for loop
-
-
+# #----------------------------
+# #Q5
+# # Print numbers 1 to 100 using for loop
+# for n in range (1,101,): #here if we add +1 then no need n+=1
+#     print(n)
+#     n+=1 
 
 #----------------------------
 #Q6
 # Print numbers 100 to 1 using for loop
-
-
+# for n in range (100,0,-1):   #or if not use -1 use at end n-=1 works same 
+#     print(n)
 
 #----------------------------
 #Q7
@@ -146,11 +155,10 @@ while n<=50:
 
 
 
+
 #----------------------------
 #Q8
 # Print multiplication table of any number n taken from user
-
-
 
 #----------------------------
 #Q9
@@ -158,9 +166,13 @@ while n<=50:
 
 
 
+
+
+
 #----------------------------
 #Q10
 # Print sum of numbers from 1 to n (user input)
+
 
 
 
