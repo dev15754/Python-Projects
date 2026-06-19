@@ -143,127 +143,197 @@
 #     print(n)
 #     n+=1 
 
-#----------------------------
-#Q6
-# Print numbers 100 to 1 using for loop
+# #----------------------------
+# #Q6
+# # Print numbers 100 to 1 using for loop
 # for n in range (100,0,-1):   #or if not use -1 use at end n-=1 works same 
 #     print(n)
 
-#----------------------------
-#Q7
-# Print multiplication table of 7
+# #----------------------------
+# #Q7
+# # Print multiplication table of 7
+# n=7
+# t=1
+# while t<=10:
+#     print(n*t)
+#     t+=1 
+
+# #----------------------------
+# #Q8
+# # Print multiplication table of any number n taken from user
+# n=5
+# for t in range (1,11,+1):
+#     print(n*t)
+
+
+
+# #----------------------------
+# #Q9
+# # Print sum of numbers from 1 to 100
+# n=sum(range(1,101))
+# print(n)
+
+# #----------------------------
+# #Q10
+# # Print sum of numbers from 1 to n (user input)
+# n=int(input("from 1 to :"))
+# n+=1
+# s=sum(range(1,n))
+# print(s)
+
+# #----------------------------
+# #Q11
+# # Print factorial of 5
+# import math
+# print(math.factorial(5))
+
+
+# #----------------------------
+# #Q12
+# # Print factorial of n (user input)
+# n=int(input("enter numer which u want factorial"))
+# import math
+# print(math.factorial(n))
+
+
+# #----------------------------
+# #Q13
+# # Print squares of numbers from 1 to 10
+# for n in range (1,11,1):
+#     print(n*n)
+
+##----------------------------
+##Q14
+## Print cubes of numbers from 1 to 10
+# for n in range (1,11,1):
+#     print(n*n*n)
+
+
+# #----------------------------
+# #Q15
+# # Print numbers 1 to 20 but skip 13 using continue
+# for a in range (1,21):
+#     if a==13:
+#         continue
+#     print(a)
+
+
+
+# #----------------------------
+# #Q16
+# # Print numbers 1 to 20 but stop at 15 using break
+# for a in range(1,21):
+#     if a==15:
+#         break
+#     print(a)
+
+
+# #----------------------------
+# #Q17
+# # Print numbers 1 to 10 using while loop
+# a=1
+# while a<=10:
+#     print(a)
+#     a+=1
+
+
+# #----------------------------
+# #Q18
+# # Print numbers 10 to 1 using while loop
+# a=10
+# while a >=1:
+#     print(a)
+#     a-=1
+
+
+# #----------------------------
+# #Q19
+# # Print all elements of [3,6,9,12,15] using while loop
+# t=3
+# n=1
+# while n<=5:
+#     print(t*n)
+#     n+=1
+
+
+# #----------------------------
+# #Q20
+# # Print all elements of [3,6,9,12,15] using for loop
+# for a in range (3,16,3):
+#     print(a)
+
+
+# #----------------------------
+# #Q21
+# # Search for 9 in [3,6,9,12,15] using while loop and print its index
+# a=3
+# n=1
+# idx=0
+# while n <=5:
+#     if a*n==9:
+#         print("find 9 at index :",idx)
+#         break
+#     print(a*n)
+#     n+=1
+#     idx+=1
+
+
+# #----------------------------
+# #Q22
+# # Search for 9 in [3,6,9,12,15] using for loop and print its index
+# idx=0
+# for a in range (3,16,3):
+#     if a==9:
+#         print(idx)
+#     idx+=1
+
+# # #----------------------------
+# # #Q23
+# # # Search for a number x (user input) in (2,4,6,8,10) using while loop
+# s=int(input("enter num:"))
+# if s%2!=0:
+#     print("wrong num")
+# elif s>10:
+#     print("big number u enter ")
+# else:
+#     n=2
+# idx=0
+# while n<11:
+#     if n==s:
+#         print("num found at index",idx)
+#     n+=2
+#     idx+=1
 
 
 
 
-#----------------------------
-#Q8
-# Print multiplication table of any number n taken from user
+# #----------------------------
+# #Q24
+# # Search for a number x (user input) in (2,4,6,8,10) using for loop
+# x=int(input("enter num"))
 
-#----------------------------
-#Q9
-# Print sum of numbers from 1 to 100
+# if x%2!=0:
+#     print("wrong num")
 
+# elif x>10:
+#     print("big")
+    
+# else:
+#     idx=0
+#     for a in range(2,11,2):
+#         if a==x:
+#             print("find",idx)
+#         idx+=1
 
-
-
-
-
-#----------------------------
-#Q10
-# Print sum of numbers from 1 to n (user input)
-
-
-
-
-#----------------------------
-#Q11
-# Print factorial of 5
-
-
-
-#----------------------------
-#Q12
-# Print factorial of n (user input)
-
-
-
-#----------------------------
-#Q13
-# Print squares of numbers from 1 to 10
-
-
-
-#----------------------------
-#Q14
-# Print cubes of numbers from 1 to 10
-
-
-
-#----------------------------
-#Q15
-# Print numbers 1 to 20 but skip 13 using continue
-
-
-
-#----------------------------
-#Q16
-# Print numbers 1 to 20 but stop at 15 using break
-
-
-
-#----------------------------
-#Q17
-# Print numbers 1 to 10 using while loop
-
-
-
-#----------------------------
-#Q18
-# Print numbers 10 to 1 using while loop
-
-
-
-#----------------------------
-#Q19
-# Print all elements of [3,6,9,12,15] using while loop
-
-
-
-#----------------------------
-#Q20
-# Print all elements of [3,6,9,12,15] using for loop
-
-
-
-#----------------------------
-#Q21
-# Search for 9 in [3,6,9,12,15] using while loop and print its index
-
-
-
-#----------------------------
-#Q22
-# Search for 9 in [3,6,9,12,15] using for loop and print its index
-
-
-
-#----------------------------
-#Q23
-# Search for a number x (user input) in (2,4,6,8,10) using while loop
-
-
-
-#----------------------------
-#Q24
-# Search for a number x (user input) in (2,4,6,8,10) using for loop
 
 
 
 #----------------------------
 #Q25
 # Print elements of ("apple","banana","cherry") using for loop
-
+# fruits=("apple","banana","cherry")
+# for f in fruits:
+#     print(f)
 
 
 #----------------------------
