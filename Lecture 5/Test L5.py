@@ -328,78 +328,99 @@
 
 
 
-#----------------------------
-#Q25
-# Print elements of ("apple","banana","cherry") using for loop
+# #----------------------------
+# #Q25
+# # Print elements of ("apple","banana","cherry") using for loop
 # fruits=("apple","banana","cherry")
 # for f in fruits:
 #     print(f)
 
 
-#----------------------------
-#Q26
-# Print elements of ("apple","banana","cherry") using while loop
+# #----------------------------
+# #Q26
+# # Print elements of ("apple","banana","cherry") using while loop
+# fruits=("apple","banana","cherry")
+# i=0
+# while i<=len(fruits):
+#     print(fruits[i])
+#     i+=1
+
+
+# #----------------------------
+# #Q27
+# # Print even numbers from 2 to 50 using range
+# for f in range (2,51,1):
+#     if f%2==0:
+#         print(f)
+  
+        
+
+
+# #----------------------------
+# #Q28
+# # Print odd numbers from 1 to 50 using range
+# for f in range (1,51,1):
+#     if f%2!=0:
+#         print(f)
 
 
 
-#----------------------------
-#Q27
-# Print even numbers from 2 to 50 using range
+# #----------------------------
+# #Q29
+# # Print multiples of 5 from 5 to 100 using range
+# for f in range(5,101,1):
+#     if f%5==0:
+#         print(f)
 
 
+# #----------------------------
+# #Q30
+# # Print multiples of 3 from 3 to 99 using range
+# for a in range(3,100,1):
+#     if a%3==0:
+#         print(a)
 
-#----------------------------
-#Q28
-# Print odd numbers from 1 to 50 using range
-
-
-
-#----------------------------
-#Q29
-# Print multiples of 5 from 5 to 100 using range
-
-
-
-#----------------------------
-#Q30
-# Print multiples of 3 from 3 to 99 using range
+# #----------------------------
+# #Q31
+# # Print numbers from 0 to 20 with step 4 using range
+# for a in range(0,21,4):
+#     print(a)
 
 
-
-#----------------------------
-#Q31
-# Print numbers from 0 to 20 with step 4 using range
-
-
-
-#----------------------------
-#Q32
-# Print numbers from 10 to 100 with step 10 using range
+# #----------------------------
+# #Q32
+# # Print numbers from 10 to 100 with step 10 using range
+# for a in range(10,101,10):
+#     print(a)
 
 
-
-#----------------------------
-#Q33
-# Print numbers from 100 to 0 with step -5 using range
-
-
-
-#----------------------------
-#Q34
-# Print numbers from 50 to 10 with step -3 using range
+# #----------------------------
+# #Q33
+# # Print numbers from 100 to 0 with step -5 using range
+# for a in range(100,-1,-5):
+#     print(a)
 
 
+# #----------------------------
+# #Q34
+# # Print numbers from 50 to 10 with step -3 using range
+# for a in range(50,9,-3):
+#     print(a)
 
-#----------------------------
-#Q35
-# Write an empty for loop using pass
+# #----------------------------
+# #Q35
+# # Write an empty for loop using pass
+# for i in range(5):
+#     pass
 
 
-
-#----------------------------
-#Q36
-# Write an empty while loop using pass
-
+# #----------------------------
+# #Q36
+# # Write an empty while loop using pass
+# a=5
+# while a<=100:
+#     pass
+   
 
 
 #----------------------------
