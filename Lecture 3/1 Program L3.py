@@ -60,8 +60,8 @@
 list=[2,9,3,9]
 
 
-# list.append(4)
-# print(list)
+list.append(4)
+print(list)
 
 # ----------------------------------------------
 #print(list.sort())  prints null 
