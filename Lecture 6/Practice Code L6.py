@@ -73,13 +73,26 @@
 
 # currency_converter(10)
 
-#ask user a num make function if num is odd print odd if even print even
-n=int(input("number enter"))
+# #ask user a num make function if num is odd print odd if even print even
+# n=int(input("number enter"))
 
-def checker(n):
-    if n%2==0:
-        print("its even")
+# def checker(n):
+#     if n%2==0:
+#         print("its even")
+#     else:
+#         print("its odd")
+
+# checker(n)
+
+# Write a recursive function to calculate the sum of first N natural numbers
+
+def calc_sum(n):
+    if n == 0:
+        return 0
     else:
-        print("its odd")
+        return calc_sum(n-1)+n
 
-checker(n)
+
+s = calc_sum(10)
+print(s)
+
