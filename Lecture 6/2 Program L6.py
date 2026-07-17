@@ -31,11 +31,11 @@
 
 # find factorial of n
 
-def find_fact(n):
-    if n==0 or n==1:
-        print(1)
-    else:
-        n=(n-1)*n
-        print(n)
+# def find_fact(n):
+#     if n==0 or n==1:
+#         print(1)
+#     else:
+#         n=(n-1)*n
+#         print(n)
 
-find_fact(5)
+# find_fact(5)
